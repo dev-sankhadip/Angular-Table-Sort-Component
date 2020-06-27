@@ -1,20 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TableComponent } from './component/table/table.component';
 import { SortDirective } from './directive/sort.directive';
-import { SortComponent } from './component/sort/sort.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SortDirective,
-    SortComponent
+    TableComponent,
+    SortDirective
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
